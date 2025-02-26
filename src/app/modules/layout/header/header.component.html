@@ -1,0 +1,14 @@
+<c-header class="mb-4 mt-2" position="sticky">
+    <c-container fluid>
+      <button 
+        [cSidebarToggle]="sidebarId()"
+        cHeaderToggler 
+        cButton
+        toggle="visible"
+        aria-label="Toggle sidebar navigation"
+        color="default">
+        <svg [cIcon]="icons.cilMenu" size="lg"></svg></button>
+      <c-header-nav>
+      </c-header-nav>
+    </c-container>
+  </c-header>

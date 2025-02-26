@@ -1,0 +1,15 @@
+$pl_8: 8px;
+$text_title: 20px;
+
+.border-bottom {
+    border-color: var(--bs-gray-700) !important;
+}
+
+.pl-8 {
+    padding-left: $pl_8;
+}
+
+.text-title {
+    font-size: $text_title;
+    text-decoration: none;
+}

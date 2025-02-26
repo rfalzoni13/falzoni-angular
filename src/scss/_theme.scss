@@ -1,0 +1,10 @@
+@use "@coreui/coreui/scss/mixins/transition" as *;
+
+$width_100: 100%;
+
+.wrapper {
+    width: $width_100;
+    padding-inline: var(--cui-sidebar-occupy-start, 0) var(--cui-sidebar-occupy-end, 0);
+    will-change: auto;
+    @include transition(padding .15s);
+}

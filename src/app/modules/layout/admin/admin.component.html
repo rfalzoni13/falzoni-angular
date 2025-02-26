@@ -1,0 +1,16 @@
+<c-sidebar #sidebar1="cSidebar" id="sidebar1" visible colorScheme="dark" position="fixed" visible>
+  <c-sidebar-header class="border-bottom">
+    <c-sidebar-brand>
+      <img cImg align="start" fluid src="assets/images/angular.svg" width="30" height="30">
+      <p class='text-title mb-0 float-end pl-8'>Falzoni Angular</p>
+    </c-sidebar-brand>
+  </c-sidebar-header>
+  <c-sidebar-nav [navItems]="navItems" />
+</c-sidebar>
+  <div class="wrapper d-flex flex-column min-vh-100">
+    <app-header sidebarId="sidebar1" />
+    <c-card-body>
+      <router-outlet />
+    </c-card-body>
+    <app-footer />
+</div>
