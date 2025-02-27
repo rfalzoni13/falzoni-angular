@@ -13,8 +13,7 @@ import { IconDirective } from '@coreui/icons-angular';
     HeaderNavComponent,
     IconDirective
   ],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  templateUrl: './header.component.html'
 })
 export class HeaderComponent {
     icons = { cilMenu }

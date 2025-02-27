@@ -1,5 +1,13 @@
 <c-container fluid>
     <c-row>
-        <h1>Hello World</h1>
+        <h1>Bem vindo, Renato Falzoni</h1>
+    </c-row>
+    <c-row class="mt-5">
+        <c-col xs="6" sm="6">
+            <component-inline-chart [title]="dataChartLine.title" [color]="dataChartLine.color" [dataChart]="dataChartLine.dataChart" />
+        </c-col>
+        <c-col xs="6" sm="6">
+            <component-bar-chart [title]="dataChartBar.title" [color]="dataChartBar.color" [dataChart]="dataChartBar.dataChart" />
+        </c-col>
     </c-row>
 </c-container>
