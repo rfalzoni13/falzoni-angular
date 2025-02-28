@@ -4,11 +4,10 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ColorService {
-  #lineChartColors: any[] = []
-  #barChartColors: any[] = []
+  #chartColors: any[] = []
 
-  loadLineChartColors(): any[] {
-    this.#lineChartColors = [
+  loadChartColors(): any[] {
+    this.#chartColors = [
       {
         lineColor: 'rgba(226, 49, 49, 0.63)',
         borderColor: 'rgb(255, 92, 92)',
@@ -36,25 +35,6 @@ export class ColorService {
       }
     ]
 
-    return this.#lineChartColors
-  }
-
-  loadBarChartColors(): any[] {
-    this.#barChartColors = [
-      {
-        color: '#ff0505'
-      },
-      {
-        color: '#248000'
-      },
-      {
-        color: '#000ece'
-      },
-      {
-        color: '#d67900'
-      }
-    ]
-
-    return this.#barChartColors
+    return this.#chartColors
   }
 }

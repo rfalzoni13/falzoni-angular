@@ -1,13 +1,21 @@
-<c-container fluid>
-    <c-row>
-        <h1>Bem vindo, Renato Falzoni</h1>
-    </c-row>
+<c-container breakpoint="lg" class="px-4">
     <c-row class="mt-5">
         <c-col xs="6" sm="6">
-            <component-inline-chart [title]="dataChartLine.title" [color]="dataChartLine.color" [dataChart]="dataChartLine.dataChart" />
+            <component-chart [type]="categoryChart.type" [title]="categoryChart.title"
+                [subtitle]="categoryChart.subtitle" [color]="categoryChart.color"
+                [dataChart]="categoryChart.dataChart" />
         </c-col>
         <c-col xs="6" sm="6">
-            <component-bar-chart [title]="dataChartBar.title" [color]="dataChartBar.color" [dataChart]="dataChartBar.dataChart" />
+            <component-chart [type]="productChart.type" [title]="productChart.title"
+            [subtitle]="categoryChart.subtitle" [color]="productChart.color"
+            [dataChart]="productChart.dataChart" />
+        </c-col>
+    </c-row>
+    <c-row class="mt-5">
+        <c-col xs="8" sm="8">
+            <component-chart [type]="serviceChart.type" [title]="serviceChart.title"
+            [subtitle]="categoryChart.subtitle" [color]="serviceChart.color"
+            [dataChart]="serviceChart.dataChart" />
         </c-col>
     </c-row>
 </c-container>

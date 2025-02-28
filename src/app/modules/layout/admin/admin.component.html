@@ -1,4 +1,4 @@
-<c-sidebar #sidebar1="cSidebar" id="sidebar1" visible colorScheme="dark" position="fixed" visible>
+<c-sidebar #sidebar1="cSidebar" id="sidebar1" colorScheme="dark" position="fixed" visible>
   <c-sidebar-header class="border-bottom">
     <c-sidebar-brand>
       <img cImg align="start" fluid src="assets/images/angular.svg" width="30" height="30">
@@ -7,10 +7,15 @@
   </c-sidebar-header>
   <c-sidebar-nav [navItems]="navItems" />
 </c-sidebar>
-  <div class="wrapper d-flex flex-column min-vh-100">
-    <app-header sidebarId="sidebar1" />
-    <c-card-body>
-      <router-outlet />
-    </c-card-body>
-    <app-footer />
+<div class="wrapper d-flex flex-column min-vh-100">
+  <app-header sidebarId="sidebar1" />
+  <c-container fluid class="mt-2">
+    <c-breadcrumb class="d-flex justify-content-end">
+      <c-breadcrumb-item [active]="true">Home</c-breadcrumb-item>
+    </c-breadcrumb>
+  </c-container>
+  <c-card-body class="mb-5">
+    <router-outlet />
+  </c-card-body>
+  <app-footer />
 </div>

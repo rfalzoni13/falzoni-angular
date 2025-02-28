@@ -1,0 +1,11 @@
+<c-card [cBorder]="{top: {color: color, width: 3}}" [textColor]="color">
+    <c-card-body>
+        <c-row>
+            <c-col class="mb-4">
+                <h4 cCardTitle class="mb-0">{{ title }}</h4>
+                <small cCardSubtitle class="text-medium-emphasis">{{ subtitle }}</small>
+            </c-col>
+        </c-row>
+            <c-chart customTooltips="false" [data]="data" [type]="type" />
+    </c-card-body>
+</c-card>

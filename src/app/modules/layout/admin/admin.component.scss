@@ -1,6 +1,10 @@
 $pl_8: 8px;
 $text_title: 20px;
 
+c-card-body {
+    background-color: rgba(245, 245, 245, 0.555);
+}
+
 .border-bottom {
     border-color: var(--bs-gray-700) !important;
 }
